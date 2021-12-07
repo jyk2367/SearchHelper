@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/urlclipper"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/URLsearchET"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="검색어"/>
+
+        <Button
+            android:id="@+id/URLsearchBtn"
+            android:layout_weight="2"
+            android:text="찾기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lastBtn"
+            android:layout_weight="2"
+            android:text="이전"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_weight="2"
+            android:text="다음"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/urlRV_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/URLRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/folderFAB"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end|bottom|right"-->
+<!--            android:layout_marginBottom="70dp"-->
+<!--            android:src="@drawable/ic_addfolder"-->
+<!--            android:contentDescription="안"-->
+<!--            android:maxWidth="50dp"-->
+<!--            android:maxHeight="50dp"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:fabSize="normal"-->
+<!--            android:padding="10dp"-->
+<!--            android:background="@color/transparent"/>-->
+
+
+    </FrameLayout>
+</LinearLayout>

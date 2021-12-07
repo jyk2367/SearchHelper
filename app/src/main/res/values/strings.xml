@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">searchHelper</string>
+    <string name="foldername">저장소</string>
+    <string name="addedDate">저장날짜</string>
+    <string name="title">제목</string>
+    <string name="urlclipper">URLClipper</string>
+</resources>

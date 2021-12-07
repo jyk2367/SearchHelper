@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/memoTV"
+        android:gravity="center"
+        android:hint="제목"
+        android:textSize="30dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:ems="15"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <WebView
+        android:id="@+id/wView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp"/>
+    <ProgressBar
+        android:id="@+id/pgBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/memoET"
+        android:hint="메모할 내용을 입력하세요."
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <Button
+        android:id="@+id/memoStoreBtn"
+        android:text="저장하기"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"/>
+
+</LinearLayout>
